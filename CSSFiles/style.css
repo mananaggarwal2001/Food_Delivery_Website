@@ -1,0 +1,301 @@
+/* For smooth Scrolling we have */
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Reset  */
+body {
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+/* CSS Variable */
+:root {
+    --navbar-height: 455px;
+}
+
+/* navbar styling */
+#navbar {
+    display: flex;
+    align-items: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bolder;
+    position: relative;
+
+}
+
+/* navbar styling: Logo and image */
+#logo {
+    margin-right: 12px;
+
+}
+
+#logo img {
+    height: 62px;
+    margin-left: 20px;
+    border-radius: 100%;
+}
+
+/* navbar Styling : List styling */
+
+#navbar {
+    position: sticky;
+    top: 0;
+}
+
+#navbar ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.5);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#navbar ul li {
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    margin: 0px 18px;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Home Action */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    height: 400px;
+
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background-image: url('../images/background6.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0px;
+    /* To maintain the remaing position constant in the given navbar etc. */
+    left: 0px;
+    right: 0px;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+
+
+#home h1 {
+    margin: 0px;
+    margin-top: 28px;
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    box-sizing: border-box;
+}
+
+#home p {
+    margin: 0px;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* Services Sections CSS Starts Now */
+#services {
+    /* margin:34px; */
+    display: flex;
+
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 7px 30px;
+    border-radius: 95px;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+}
+
+#services :nth-child(3) img {
+    width: 238px;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+.service-container {
+    margin-top: 80px;
+
+}
+
+/* .service-container h1{
+    display: block;
+    height: 20%;
+    width: 20%;
+    margin: auto;
+} */
+
+
+/* Client Section Starts from now in the CSS */
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 150px;
+}
+
+#client-section {
+    height: 344px;
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../images/background3image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+/* Contact Section */
+
+#contact-us {
+    position: relative;
+}
+
+#contact-us::before {
+    content: "";
+    position: absolute;
+    background: url('../images/contactus.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+
+#contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-form input,#contact-form textarea{
+    padding: 0.5;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 1.1rem;
+
+}
+
+#contact-form form{
+    width: 40%;
+}
+#contact-form form::placeholder{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    font-weight: bolder;
+}
+#contact-form label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    font-weight: bolder;
+}
+
+
+/* Footer Section */
+
+footer{
+    background-color: black;
+    color:white;
+    padding: 9px 20px;
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bolder;
+}
+
+/* Utility classes for reusing the code in whole style sheet. */
+.h-primary {
+    font-size: 3.3rem;
+    padding: 20px;
+    font-family: 'Bree Serif', serif;
+    font-weight: bolder;
+}
+
+.H-secondary {
+    font-size: 2.5rem;
+    padding: 20px;
+    font-family: 'Bree Serif', serif;
+    font-weight: bolder;
+}
+
+.center {
+    text-align: center;
+}
+
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    cursor: pointer;
+    color: white;
+    margin: 35px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bolder;
+}
