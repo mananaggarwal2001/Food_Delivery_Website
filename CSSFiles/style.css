@@ -131,6 +131,10 @@ body {
 }
 
 /* Services Sections CSS Starts Now */
+
+#services img{
+    width: 254px;
+}
 #services {
     /* margin:34px; */
     display: flex;
