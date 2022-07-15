@@ -133,7 +133,7 @@ body {
 /* Services Sections CSS Starts Now */
 
 #services img{
-    width: 254px;
+    width: 258px;
 }
 #services {
     /* margin:34px; */
@@ -156,10 +156,6 @@ body {
     display: block;
     margin: auto;
     border-radius: 50px;
-}
-
-#services :nth-child(3) img {
-    width: 238px;
 }
 
 #services .box p {
